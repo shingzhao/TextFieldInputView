@@ -1,9 +1,16 @@
-//
-//  UIView+Extra.swift
-//  TextFieldInputView
-//
-//  Created by Shing Zhao on 12/13/17.
-//  Copyright © 2017 Shing Zhao. All rights reserved.
-//
+import UIKit
 
-import Foundation
+extension UIView {
+  var mdcSafeAreaInsets: UIEdgeInsets {
+    #if swift(>=3.2)
+      if #available(iOS 11.0, *) {
+        return self.safeAreaInsets
+      } else {
+        return  .zero
+      }
+    #else
+      return .zero
+    #endif
+  }
+}
+

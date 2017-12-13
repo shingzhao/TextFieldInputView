@@ -1,95 +1,67 @@
-//
-//  MasterViewController.swift
-//  TextFieldInputView
-//
-//  Created by Shing Zhao on 12/13/17.
-//  Copyright © 2017 Shing Zhao. All rights reserved.
-//
-
 import UIKit
+import MaterialComponents
 
-class MasterViewController: UITableViewController {
+class MasterViewController: MDCCollectionViewController {
+  var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".characters.map({ (c) -> String in
+    return "\(c)"
+  })
 
-  var detailViewController: DetailViewController? = nil
-  var objects = [Any]()
+  private let appBar = MDCAppBar()
 
+  override func loadView() {
+    super.loadView()
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-    navigationItem.leftBarButtonItem = editButtonItem
 
-    let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-    navigationItem.rightBarButtonItem = addButton
-    if let split = splitViewController {
-        let controllers = split.viewControllers
-        detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
-    }
+    self.navigationController?.isNavigationBarHidden = true
+
+    self.addChildViewController(appBar.headerViewController)
+    self.appBar.headerViewController.headerView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+    self.appBar.headerViewController.headerView.trackingScrollView = self.collectionView
+
+    appBar.addSubviewsToParent()
+
+    self.title = "Testing"
+
+    self.collectionView?.backgroundColor = .white
+
+    self.collectionView?.register(MDCCollectionViewTextCell.self)
   }
 
   override func viewWillAppear(_ animated: Bool) {
-    clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
     super.viewWillAppear(animated)
+
+    let path = IndexPath.init(item: 0, section: 0)
+    self.collectionView?.scrollToItem(at: path, at: UICollectionViewScrollPosition.bottom, animated: false)
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-  @objc
-  func insertNewObject(_ sender: Any) {
-    objects.insert(NSDate(), at: 0)
-    let indexPath = IndexPath(row: 0, section: 0)
-    tableView.insertRows(at: [indexPath], with: .automatic)
-  }
-
-  // MARK: - Segues
-
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "showDetail" {
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let object = objects[indexPath.row] as! NSDate
-            let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-            controller.detailItem = object
-            controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-            controller.navigationItem.leftItemsSupplementBackButton = true
-        }
-    }
-  }
-
-  // MARK: - Table View
-
-  override func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
-  }
-
-  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return objects.count
-  }
-
-  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-    let object = objects[indexPath.row] as! NSDate
-    cell.textLabel!.text = object.description
+  override func collectionView(_ collectionView: UICollectionView,
+                               cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(for: indexPath) as MDCCollectionViewTextCell
+    cell.textLabel?.text = labels[indexPath.item]
     return cell
   }
 
-  override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-    // Return false if you do not want the specified item to be editable.
-    return true
+  override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return 1
   }
 
-  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-    if editingStyle == .delete {
-        objects.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .fade)
-    } else if editingStyle == .insert {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
+  override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return self.labels.count
   }
 
+  override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    let width = collectionView.bounds.width
+    return CGSize(width: width, height: 100)
+  }
+
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let vc = ListViewController()
+    let nc = UINavigationController(rootViewController: vc)
+    nc.isNavigationBarHidden = true
+    self.showDetailViewController(nc, sender: nil)
+  }
 
 }
-

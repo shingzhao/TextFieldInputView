@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BDC3BA373B43527E6D0CC83 /* Pods_TextFieldInputView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B05846BE8AEC71B3577C4D7 /* Pods_TextFieldInputView.framework */; };
+		2D725D619764844DDD6D239F /* Pods_TextFieldInputViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9135CD0327C0C6A4460624 /* Pods_TextFieldInputViewTests.framework */; };
+		560674A6F8F4B828CB23A4A3 /* Pods_TextFieldInputViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C58B7263ACE03C2457A953 /* Pods_TextFieldInputViewUITests.framework */; };
 		C9378CAA1FE1CB7F00CE8AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CA91FE1CB7F00CE8AA0 /* AppDelegate.swift */; };
 		C9378CAC1FE1CB7F00CE8AA0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CAB1FE1CB7F00CE8AA0 /* MasterViewController.swift */; };
-		C9378CAE1FE1CB7F00CE8AA0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CAD1FE1CB7F00CE8AA0 /* DetailViewController.swift */; };
-		C9378CB11FE1CB7F00CE8AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9378CAF1FE1CB7F00CE8AA0 /* Main.storyboard */; };
 		C9378CB31FE1CB7F00CE8AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9378CB21FE1CB7F00CE8AA0 /* Assets.xcassets */; };
-		C9378CB61FE1CB7F00CE8AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9378CB41FE1CB7F00CE8AA0 /* LaunchScreen.storyboard */; };
 		C9378CC11FE1CB7F00CE8AA0 /* TextFieldInputViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CC01FE1CB7F00CE8AA0 /* TextFieldInputViewTests.swift */; };
 		C9378CCC1FE1CB7F00CE8AA0 /* TextFieldInputViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CCB1FE1CB7F00CE8AA0 /* TextFieldInputViewUITests.swift */; };
+		C9378CDA1FE1CD1000CE8AA0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CD91FE1CD1000CE8AA0 /* ListViewController.swift */; };
+		C9378CDC1FE1CD9900CE8AA0 /* MDCInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CDB1FE1CD9900CE8AA0 /* MDCInputViewController.swift */; };
+		C9378CDE1FE1CDE800CE8AA0 /* UIView+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CDD1FE1CDE800CE8AA0 /* UIView+Extra.swift */; };
+		C9378CE01FE1D31700CE8AA0 /* UICollectionView+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9378CDF1FE1D31700CE8AA0 /* UICollectionView+Extra.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		293DB4EFC2DFB6501C73678F /* Pods-TextFieldInputViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldInputViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldInputViewUITests/Pods-TextFieldInputViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3214854C0D61058C98FE595E /* Pods-TextFieldInputViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldInputViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldInputViewTests/Pods-TextFieldInputViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56DA0F199CE409D12CAFF7CA /* Pods-TextFieldInputView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldInputView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldInputView/Pods-TextFieldInputView.debug.xcconfig"; sourceTree = "<group>"; };
+		5A874DF3FF4C2AFB2BC3A050 /* Pods-TextFieldInputViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldInputViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldInputViewTests/Pods-TextFieldInputViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		72329E83578DA4A2C45DBAB9 /* Pods-TextFieldInputView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldInputView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldInputView/Pods-TextFieldInputView.release.xcconfig"; sourceTree = "<group>"; };
+		8B05846BE8AEC71B3577C4D7 /* Pods_TextFieldInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextFieldInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C58B7263ACE03C2457A953 /* Pods_TextFieldInputViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextFieldInputViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9378CA61FE1CB7F00CE8AA0 /* TextFieldInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9378CA91FE1CB7F00CE8AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9378CAB1FE1CB7F00CE8AA0 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		C9378CAD1FE1CB7F00CE8AA0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		C9378CB01FE1CB7F00CE8AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9378CB21FE1CB7F00CE8AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9378CB51FE1CB7F00CE8AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9378CB71FE1CB7F00CE8AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9378CBC1FE1CB7F00CE8AA0 /* TextFieldInputViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldInputViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9378CC01FE1CB7F00CE8AA0 /* TextFieldInputViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInputViewTests.swift; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		C9378CC71FE1CB7F00CE8AA0 /* TextFieldInputViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldInputViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9378CCB1FE1CB7F00CE8AA0 /* TextFieldInputViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInputViewUITests.swift; sourceTree = "<group>"; };
 		C9378CCD1FE1CB7F00CE8AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9378CD91FE1CD1000CE8AA0 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C9378CDB1FE1CD9900CE8AA0 /* MDCInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDCInputViewController.swift; sourceTree = "<group>"; };
+		C9378CDD1FE1CDE800CE8AA0 /* UIView+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extra.swift"; sourceTree = "<group>"; };
+		C9378CDF1FE1D31700CE8AA0 /* UICollectionView+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extra.swift"; sourceTree = "<group>"; };
+		D0859636F2CAE686C186D8D4 /* Pods-TextFieldInputViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldInputViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldInputViewUITests/Pods-TextFieldInputViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC9135CD0327C0C6A4460624 /* Pods_TextFieldInputViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextFieldInputViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BDC3BA373B43527E6D0CC83 /* Pods_TextFieldInputView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D725D619764844DDD6D239F /* Pods_TextFieldInputViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560674A6F8F4B828CB23A4A3 /* Pods_TextFieldInputViewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4685F0BE1FCB4C895FBB31DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56DA0F199CE409D12CAFF7CA /* Pods-TextFieldInputView.debug.xcconfig */,
+				72329E83578DA4A2C45DBAB9 /* Pods-TextFieldInputView.release.xcconfig */,
+				3214854C0D61058C98FE595E /* Pods-TextFieldInputViewTests.debug.xcconfig */,
+				5A874DF3FF4C2AFB2BC3A050 /* Pods-TextFieldInputViewTests.release.xcconfig */,
+				293DB4EFC2DFB6501C73678F /* Pods-TextFieldInputViewUITests.debug.xcconfig */,
+				D0859636F2CAE686C186D8D4 /* Pods-TextFieldInputViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9378C9D1FE1CB7F00CE8AA0 = {
 			isa = PBXGroup;
 			children = (
+				C9378CDF1FE1D31700CE8AA0 /* UICollectionView+Extra.swift */,
 				C9378CA81FE1CB7F00CE8AA0 /* TextFieldInputView */,
 				C9378CBF1FE1CB7F00CE8AA0 /* TextFieldInputViewTests */,
 				C9378CCA1FE1CB7F00CE8AA0 /* TextFieldInputViewUITests */,
 				C9378CA71FE1CB7F00CE8AA0 /* Products */,
+				4685F0BE1FCB4C895FBB31DD /* Pods */,
+				D2BD599CBB4833DDA0A8E20C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +134,11 @@
 			children = (
 				C9378CA91FE1CB7F00CE8AA0 /* AppDelegate.swift */,
 				C9378CAB1FE1CB7F00CE8AA0 /* MasterViewController.swift */,
-				C9378CAD1FE1CB7F00CE8AA0 /* DetailViewController.swift */,
-				C9378CAF1FE1CB7F00CE8AA0 /* Main.storyboard */,
 				C9378CB21FE1CB7F00CE8AA0 /* Assets.xcassets */,
-				C9378CB41FE1CB7F00CE8AA0 /* LaunchScreen.storyboard */,
 				C9378CB71FE1CB7F00CE8AA0 /* Info.plist */,
+				C9378CD91FE1CD1000CE8AA0 /* ListViewController.swift */,
+				C9378CDB1FE1CD9900CE8AA0 /* MDCInputViewController.swift */,
+				C9378CDD1FE1CDE800CE8AA0 /* UIView+Extra.swift */,
 			);
 			path = TextFieldInputView;
 			sourceTree = "<group>";
@@ -128,6 +161,16 @@
 			path = TextFieldInputViewUITests;
 			sourceTree = "<group>";
 		};
+		D2BD599CBB4833DDA0A8E20C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B05846BE8AEC71B3577C4D7 /* Pods_TextFieldInputView.framework */,
+				FC9135CD0327C0C6A4460624 /* Pods_TextFieldInputViewTests.framework */,
+				B0C58B7263ACE03C2457A953 /* Pods_TextFieldInputViewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9378CD01FE1CB7F00CE8AA0 /* Build configuration list for PBXNativeTarget "TextFieldInputView" */;
 			buildPhases = (
+				A5D8D091CC6F96216097A398 /* [CP] Check Pods Manifest.lock */,
 				C9378CA21FE1CB7F00CE8AA0 /* Sources */,
 				C9378CA31FE1CB7F00CE8AA0 /* Frameworks */,
 				C9378CA41FE1CB7F00CE8AA0 /* Resources */,
+				32E64A9565A9C6161DAA2D27 /* [CP] Embed Pods Frameworks */,
+				DED1F1CF72667091C1CF3F30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9378CD31FE1CB7F00CE8AA0 /* Build configuration list for PBXNativeTarget "TextFieldInputViewTests" */;
 			buildPhases = (
+				D3B29C1AE6D37818310CF0F1 /* [CP] Check Pods Manifest.lock */,
 				C9378CB81FE1CB7F00CE8AA0 /* Sources */,
 				C9378CB91FE1CB7F00CE8AA0 /* Frameworks */,
 				C9378CBA1FE1CB7F00CE8AA0 /* Resources */,
+				96699095873E0FD2AB5A7918 /* [CP] Embed Pods Frameworks */,
+				4F0A17CC8B740B90739AC7D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9378CD61FE1CB7F00CE8AA0 /* Build configuration list for PBXNativeTarget "TextFieldInputViewUITests" */;
 			buildPhases = (
+				42CBAFD1A1066902E7FFCEEC /* [CP] Check Pods Manifest.lock */,
 				C9378CC31FE1CB7F00CE8AA0 /* Sources */,
 				C9378CC41FE1CB7F00CE8AA0 /* Frameworks */,
 				C9378CC51FE1CB7F00CE8AA0 /* Resources */,
+				A0E496D84E0F24E9B0590406 /* [CP] Embed Pods Frameworks */,
+				C6349B1D97F9D0CB38B218E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,9 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9378CB61FE1CB7F00CE8AA0 /* LaunchScreen.storyboard in Resources */,
 				C9378CB31FE1CB7F00CE8AA0 /* Assets.xcassets in Resources */,
-				C9378CB11FE1CB7F00CE8AA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +307,177 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32E64A9565A9C6161DAA2D27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldInputView/Pods-TextFieldInputView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldInputView/Pods-TextFieldInputView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42CBAFD1A1066902E7FFCEEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextFieldInputViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F0A17CC8B740B90739AC7D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldInputViewTests/Pods-TextFieldInputViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96699095873E0FD2AB5A7918 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldInputViewTests/Pods-TextFieldInputViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0E496D84E0F24E9B0590406 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldInputViewUITests/Pods-TextFieldInputViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5D8D091CC6F96216097A398 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextFieldInputView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6349B1D97F9D0CB38B218E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldInputViewUITests/Pods-TextFieldInputViewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B29C1AE6D37818310CF0F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextFieldInputViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED1F1CF72667091C1CF3F30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldInputView/Pods-TextFieldInputView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9378CA21FE1CB7F00CE8AA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9378CAE1FE1CB7F00CE8AA0 /* DetailViewController.swift in Sources */,
+				C9378CDE1FE1CDE800CE8AA0 /* UIView+Extra.swift in Sources */,
 				C9378CAC1FE1CB7F00CE8AA0 /* MasterViewController.swift in Sources */,
 				C9378CAA1FE1CB7F00CE8AA0 /* AppDelegate.swift in Sources */,
+				C9378CDC1FE1CD9900CE8AA0 /* MDCInputViewController.swift in Sources */,
+				C9378CDA1FE1CD1000CE8AA0 /* ListViewController.swift in Sources */,
+				C9378CE01FE1D31700CE8AA0 /* UICollectionView+Extra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,25 +511,6 @@
 			targetProxy = C9378CC81FE1CB7F00CE8AA0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C9378CAF1FE1CB7F00CE8AA0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9378CB01FE1CB7F00CE8AA0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C9378CB41FE1CB7F00CE8AA0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9378CB51FE1CB7F00CE8AA0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C9378CCE1FE1CB7F00CE8AA0 /* Debug */ = {
@@ -428,6 +622,7 @@
 		};
 		C9378CD11FE1CB7F00CE8AA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DA0F199CE409D12CAFF7CA /* Pods-TextFieldInputView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +638,7 @@
 		};
 		C9378CD21FE1CB7F00CE8AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72329E83578DA4A2C45DBAB9 /* Pods-TextFieldInputView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +654,7 @@
 		};
 		C9378CD41FE1CB7F00CE8AA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3214854C0D61058C98FE595E /* Pods-TextFieldInputViewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +672,7 @@
 		};
 		C9378CD51FE1CB7F00CE8AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A874DF3FF4C2AFB2BC3A050 /* Pods-TextFieldInputViewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +690,7 @@
 		};
 		C9378CD71FE1CB7F00CE8AA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 293DB4EFC2DFB6501C73678F /* Pods-TextFieldInputViewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +707,7 @@
 		};
 		C9378CD81FE1CB7F00CE8AA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0859636F2CAE686C186D8D4 /* Pods-TextFieldInputViewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
